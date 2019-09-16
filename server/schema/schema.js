@@ -32,7 +32,7 @@ const RootQuery = new GraphQLObjectType({
             args: { id: { type: GraphQLID } },
             resolve(parent, args){
                 // code to get data from db or other source
-                return _.find(books, args.id);
+                return _.find(books, {id: args.id});
             }
         }
     }
@@ -41,4 +41,3 @@ const RootQuery = new GraphQLObjectType({
 module.exports = new GraphQLSchema({
     query: RootQuery
 });
-
