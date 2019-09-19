@@ -2,6 +2,6 @@
 
 Navigate to folder server <br/>
 npm install <br/>
-run npx nodemon app.js <br/>
+run npx nodemon app.js / node app.js <br/>
 goto localhost:4000/graphql <br/>
 play around!
